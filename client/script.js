@@ -84,9 +84,9 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueId)
 
     // messageDiv.innerHTML = "..."
-    loader(messageDiv);
+    loader(messageDiv)
 
-    const response = await fetch('https://learnfast.onrender.com/', {
+    const response = await fetch('https://learnfast.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -110,7 +110,6 @@ const handleSubmit = async (e) => {
         messageDiv.innerHTML = "Something went wrong"
         alert(err)
     }
-    
 }
 
 form.addEventListener('submit', handleSubmit)
