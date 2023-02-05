@@ -85,7 +85,7 @@ const handleSubmit = async (e) => {
 
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
-
+//https://learnfast.onrender.com
     const response = await fetch('https://learnfast.onrender.com', {
         method: 'POST',
         headers: {
